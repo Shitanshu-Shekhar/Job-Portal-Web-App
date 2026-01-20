@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Job Application</title>
+    <link rel="stylesheet" href="applyJob.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Job Application Form</h1>
+</header>
+
+<form>
+
+    <section>
+        <h2>Personal Information</h2>
+
+        <label>Full Name:</label>
+        <input type="text" name="fullname" required>
+
+        <label>Email Address:</label>
+        <input type="email" name="email" required>
+
+        <label>Mobile Number:</label>
+        <input type="tel" name="phone" required>
+
+        <label>Date of Birth:</label>
+        <input type="date" name="dob">
+
+        <label>Gender:</label>
+        <div class="inline">
+            <label><input type="radio" name="gender"> Male</label>
+            <label><input type="radio" name="gender"> Female</label>
+            <label><input type="radio" name="gender"> Other</label>
+        </div>
+    </section>
+
+    <section>
+        <h2>Education Details</h2>
+
+        <label>Highest Qualification:</label>
+        <select name="qualification">
+            <option>B.Tech / B.E</option>
+            <option>B.Sc</option>
+            <option>BCA</option>
+            <option>MCA</option>
+            <option>M.Tech</option>
+        </select>
+
+        <label>University / College:</label>
+        <input type="text" name="college">
+
+        <label>Passing Year:</label>
+        <input type="number" name="year">
+    </section>
+
+    <section>
+        <h2>Professional Details</h2>
+
+        <label>Skills:</label>
+        <div class="inline">
+            <label><input type="checkbox"> C++</label>
+            <label><input type="checkbox"> Java</label>
+            <label><input type="checkbox"> Python</label>
+            <label><input type="checkbox"> HTML</label>
+            <label><input type="checkbox"> SQL</label>
+        </div>
+
+        <label>Experience:</label>
+        <select>
+            <option>Fresher</option>
+            <option>1-2 Years</option>
+            <option>3-5 Years</option>
+            <option>5+ Years</option>
+        </select>
+
+        <label>Current Location:</label>
+        <input type="text">
+
+        <label>Expected Salary:</label>
+        <input type="text" placeholder="e.g. 5 LPA">
+    </section>
+
+    <section>
+        <h2>Upload Documents</h2>
+
+        <label>Upload Resume:</label>
+        <input type="file">
+
+        <label>Cover Letter:</label>
+        <textarea rows="5"></textarea>
+    </section>
+
+    <section>
+        <h2>Declaration</h2>
+        <label class="declaration">
+            <input type="checkbox" required>
+            I hereby declare that the information provided above is true and correct.
+        </label>
+    </section>
+
+    <div class="buttons">
+        <input type="submit" value="Apply Now">
+        <input type="reset" value="Reset">
+    </div>
+
+</form>
+
+<footer>
+    <p>&copy; 2026 Job Portal | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>

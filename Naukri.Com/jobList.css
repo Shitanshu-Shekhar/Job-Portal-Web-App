@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f8;
+    margin: 0;
+    padding: 0;
+}
+
+.job-container {
+    width: 70%;
+    margin: 30px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.job-container h2 {
+    color: #1e3c72;
+    margin-bottom: 20px;
+}
+
+.job-card {
+    border-bottom: 1px solid #ccc;
+    padding: 15px 0;
+}
+
+.job-card.last {
+    border-bottom: none;
+}
+
+.job-card h3 {
+    margin: 5px 0;
+    color: #333;
+}
+
+.job-card p {
+    margin: 4px 0;
+}
+
+.job-card a {
+    display: inline-block;
+    margin-top: 8px;
+    color: #1e3c72;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.job-card a:hover {
+    text-decoration: underline;
+}
