@@ -1,104 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register Page</title>
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #e6f0ff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-
-        .form-section {
-            background-color: white;
-            width: 320px;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.2);
-        }
-
-        h2 {
-            text-align: center;
-            color: #1e3c72;
-            margin-bottom: 20px;
-        }
-
-        label {
-            display: block;
-            margin-bottom: 5px;
-            font-weight: bold;
-        }
-
-        input, select {
-            width: 100%;
-            padding: 8px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-
-        input[type="submit"] {
-            background-color: #1e3c72;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-
-        input[type="submit"]:hover {
-            background-color: #16305c;
-        }
-
-        .login-link {
-            text-align: center;
-            margin-top: 10px;
-        }
-
-        .login-link a {
-            text-decoration: none;
-            color: #1e3c72;
-            font-weight: bold;
-        }
-    </style>
-
+    <title>Create Account | Naukri.com</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<section class="form-section">
-    <h2>Register</h2>
+    <div class="auth-container">
+    
+        <div class="auth-bg-shape-1"></div>
+        <div class="auth-bg-shape-2"></div>
 
-    <form>
-        <label>Full Name:</label>
-        <input type="text" placeholder="Enter your name">
+        <div class="auth-card">
+           
+            <div class="auth-banner">
+                <h2>Start Your Journey</h2>
+                <p>Join India's No.1 Job Portal and unlock thousands of premium opportunities to accelerate your career
+                    growth.</p>
+            </div>
 
-        <label>Email:</label>
-        <input type="email" placeholder="Enter your email">
+          
+            <div class="auth-form-wrapper">
+                <h3>Create Account</h3>
 
-        <label>Password:</label>
-        <input type="password" placeholder="Create password">
+                <form id="registerForm">
+                    <div class="input-group">
+                        <label for="regName">Full Name</label>
+                        <input type="text" id="regName" placeholder="John Doe" required>
+                    </div>
 
-        <label>Confirm Password:</label>
-        <input type="password" placeholder="Re-enter password">
+                    <div class="input-group">
+                        <label for="regEmail">Email Address</label>
+                        <input type="email" id="regEmail" placeholder="name@example.com" required>
+                    </div>
 
-        <label>Role:</label>
-        <select>
-            <option>Job Seeker</option>
-            <option>Employer</option>
-        </select>
+                    <div class="input-group">
+                        <label for="regPassword">Password</label>
+                        <input type="password" id="regPassword" placeholder="Create a strong password" required>
+                    </div>
 
-        <input type="submit" value="Register">
-    </form>
+                    <div class="input-group">
+                        <label for="regConfirmPassword">Confirm Password</label>
+                        <input type="password" id="regConfirmPassword" placeholder="Re-enter password" required>
+                    </div>
 
-    <div class="login-link">
-        Already have an account?
-        <a href="login.html">Login</a>
+                    <div class="input-group">
+                        <label for="regRole">I am a</label>
+                        <select id="regRole">
+                            <option>Job Seeker</option>
+                            <option>Employer</option>
+                        </select>
+                    </div>
+
+                    <input type="submit" value="Register Now">
+                </form>
+
+                <div class="auth-links">
+                    Already have an account? <a href="login.html">Login here</a>
+                </div>
+
+                <div class="auth-links" style="margin-top: 10px;">
+                    <a href="naukri.html" style="color: var(--light-text); font-weight: normal;">&larr; Back to Home</a>
+                </div>
+            </div>
+        </div>
     </div>
-</section>
+
+    <script src="script.js"></script>
 
 </body>
+
 </html>
